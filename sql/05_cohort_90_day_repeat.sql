@@ -1,12 +1,14 @@
-﻿-- Olist portfolio project: Microsoft SQL Server (T-SQL)
--- Recovered from the project conversation. Read-only SELECT statements.
--- Run one numbered question at a time in SSMS; CTEs belong to the next SELECT only.
+﻿-- Calculates the percentage of customers who purchase again
+-- on a later calendar date within 90 days of their first purchase.
+-- Run this entire file. It reads data without changing any tables.
+-- Expected result: 16 monthly cohorts, February 2017 through May 2018.
+-- First purchase means the first observed delivered purchase
+-- in the available history. Same-day repeat orders are excluded.
+-- Purchases through August 31, 2018 are included.
+
 USE Olist;
 GO
 
--- Final faster version: distinct purchase dates then ROW_NUMBER, not correlated EXISTS.
--- First observed delivered purchase uses all available earlier history.
--- Cohorts Feb 2017-May 2018 have 90 calendar days before Aug 31 cutoff.
 ;WITH customer_purchase_dates AS (
  SELECT DISTINCT c.customer_unique_id,CAST(o.order_purchase_timestamp AS date) AS purchase_date
  FROM dbo.orders o JOIN dbo.customers c ON o.customer_id=c.customer_id WHERE o.order_status='delivered' AND o.order_purchase_timestamp < '20180901'
