@@ -1,6 +1,6 @@
 ﻿-- Olist portfolio project: Microsoft SQL Server (T-SQL)
 -- Recovered from the project conversation. Read-only SELECT statements.
--- Run one numbered question at a time in SSMS; CTEs belong to the next SELECT only.
+
 USE Olist;
 GO
 
