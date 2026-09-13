@@ -26,7 +26,9 @@ The delivery rate uses 95,453 assessable orders: 88,944 on time and 6,509 late. 
 
 The executive dashboard includes five KPI cards, monthly payments, the top ten categories by merchandise sales, and the top ten customer states by payments. Purchase-date and customer-state filters support exploration. Green bars indicate values above R$1 million; blue bars indicate values at or below that threshold.
 
-![Olist executive dashboard showing payments, delivery performance, product categories, and customer states](olist_dashboard.png)
+![Olist executive dashboard](olist_dashboard.png)
+
+[View the interactive dashboard on Tableau Public](https://public.tableau.com/views/OlistExecutiveOverview_17891599928450/Dashboard1)
 
 ## Findings and business implications
 
