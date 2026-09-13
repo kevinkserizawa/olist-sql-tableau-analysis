@@ -1,10 +1,12 @@
-﻿-- Olist portfolio project: Microsoft SQL Server (T-SQL)
--- Recovered from the project conversation. Read-only SELECT statements.
--- Run one numbered question at a time in SSMS; CTEs belong to the next SELECT only.
+﻿-- Creates the order-level dataset used by the Tableau dashboard.
+-- Run this entire file. It reads data without changing any tables.
+-- Expected result: 95,461 rows, with one row per delivered order.
+-- To export: save the results with column headers as
+-- olist_dashboard_orders.csv.
+
 USE Olist;
 GO
 
--- Export only this result grid with headers: olist_dashboard_orders.csv
 ;WITH payments_per_order AS (
     SELECT order_id, SUM(payment_value) AS payment_value
     FROM dbo.order_payments GROUP BY order_id
