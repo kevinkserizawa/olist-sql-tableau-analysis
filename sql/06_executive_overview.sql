@@ -1,5 +1,6 @@
 ﻿-- Olist portfolio project: Microsoft SQL Server (T-SQL)
--- Recovered from the project conversation. Read-only SELECT statements.
+-- Recovered from the project conversation.
+-- Run this entire file.
 
 USE Olist;
 GO
