@@ -141,5 +141,3 @@ SELECT so.seller_id,COUNT(*) AS total_orders,
     CAST(AVG(r.order_avg_review_score) AS decimal(10,2)) AS avg_order_review_score
 FROM seller_orders so LEFT JOIN reviews_per_order r ON so.order_id=r.order_id
 GROUP BY so.seller_id ORDER BY merchandise_sales DESC,so.seller_id;
-
--- Q10 was the written business recommendations, not a separate SQL query.
