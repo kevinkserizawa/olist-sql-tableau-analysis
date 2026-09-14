@@ -1,4 +1,4 @@
-Olist E-Commerce Analysis | SQL Server & Tableau
+## Olist E-Commerce Analysis | SQL Server & Tableau
 
 An analysis of Brazilian e-commerce orders using SQL Server and Tableau, examining payment trends, delivery performance, and observed repeat purchasing.
 
