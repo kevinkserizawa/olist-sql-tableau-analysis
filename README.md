@@ -67,7 +67,7 @@ The executive dashboard includes five KPI cards, monthly payments, the top ten c
 4. Use file 06 to compare results against the executive metrics above.
 5. Export the results of files 07 and 08 with column headers as `olist_dashboard_orders.csv` and `olist_dashboard_items.csv`, then relate them in Tableau using `order_id`.
 
-These saved scripts were reconstructed from the project analysis conversation. Reported checkpoints come from earlier SQL results and export checks; the reconstructed pack has not yet been rerun in its entirety against SQL Server. The original database creation and ingestion scripts are not included.
+These SQL scripts were reconstructed from the project analysis conversation and subsequently executed in SQL Server. Dashboard metrics and key analysis results were checked against earlier outputs. The data-quality checks document missing payment records, timestamp anomalies, and unmatched relationships. The original database creation and ingestion scripts are not included.
 
 ## Dataset reference and limitations
 
